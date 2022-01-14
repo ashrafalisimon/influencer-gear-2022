@@ -6,4 +6,160 @@
 ---------------- */
 body{
     font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+.section-width{
+    padding: 0px 120px;
+}
+.section-width-lg{
+    padding:  0 165px;
+}
+ .black-hightlight{
+    color: #3A3A3A;
+ }
+ p{
+    font-size: 16px;
+    font-weight: 300;
+ }
+ .anchor-purple{
+     padding: 10px 24px;
+     border-radius: 41px;
+     background-color: #E02C6D;
+     font-size: 16px;
+     font-weight: 700;
+     color: white;
+     text-decoration: none;
+     transition: background-color 0.2s, box-shadow 0.2s;
+ }
+ .anchor-purple:hover{
+     background-color: #ca064e;
+     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);;
+ }
+ hr{
+    border: 1px solid #D1D1D1;
+    margin: 30px 0;
+ }
+
+/* ---------------------
+   logo and nav section css 
+   --------------------------*/
+   .logo_nav{
+       display: grid;
+       grid-template-columns: repeat(2, 1fr);
+       justify-content: space-between;
+   }
+   .logo .logo-text{
+       font-size: 24px;
+       font-weight: 700;
+       
+   }
+   .nav_icon{
+       display: flex;
+       justify-content: flex-end;
+       align-items: center;
+   }
+   nav ul{
+       display: flex;
+       padding: 0;
+   }
+   nav ul li{
+       list-style: none;
+   }
+   nav ul li a{
+       text-decoration: none;
+       margin-right: 34px;
+       font-size: 16px;
+       font-weight: 600;
+   }
+   .icon i{
+       font-size: 19px;
+       color: #000000;
+       margin-left: 15px;
+   }
+
+    /* -----------------------
+       Top Banner Section Css 
+       ----------------------- */
+       .top-banner{
+           display: grid;
+           grid-template-columns: repeat(2, 1fr);
+           justify-content: space-between;
+           align-items: center;
+           justify-items: center;
+           padding-bottom: 90px;
+       }
+       .banner-content h1{
+           font-size: 52px;
+           font-weight: 700;
+       }
+       .banner-content p{
+           margin-bottom: 30px;
+       }
+       .banner-img{
+           background-image: url(images/Circle\ design.svg);
+           background-repeat: no-repeat;
+           background-position: center;
+       }
+       /* Popular market place css */
+       .popular-marketplace-img{
+           display: grid;
+           grid-template-columns: repeat(7, 1fr);
+           
+            justify-content: space-around;
+            align-items: center;
+            justify-items: center;
+       }
+/* popular collection css */
+.popular-collection{
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+.popular-collection h3{
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    justify-content: space-around;
+
+}
+.item{
+    padding: 15px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+.item-details .item-tittle{
+    font-size: 28px;
+    font-weight: 500;
+    color: #18191F;
+    margin: 0;
+}   
+.item-details .item-price{
+    margin: 0;
+    font-size: 24px;
+    font-weight: 400;
+    color:rgba(0, 0, 0, 0.87);
+}
+.item-rating i{
+    font-size: 16px;
+    color: #FB8200;
+    font-weight: 700;
+}
+.item-detail p{
+    margin: 5px;
+}
+.see-more-btn{
+    margin: 30px;
+    text-align: right;
+}
+.see-more-btn a{
+    font-size: 16px;
+    font-weight: 700;
+    color: #E02C6D;
+    text-decoration: none;
+    
 }

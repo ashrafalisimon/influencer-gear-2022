@@ -43,6 +43,9 @@ body{
 /* ---------------------
    logo and nav section css 
    --------------------------*/
+   .top-banner:hover .banner-img img{
+       transform: rotate(360deg);
+   }
    .logo_nav{
        display: grid;
        grid-template-columns: repeat(2, 1fr);
@@ -75,6 +78,9 @@ body{
        font-size: 19px;
        color: #000000;
        margin-left: 15px;
+   }
+   .banner-img img{
+       transition: transform 1s ease-in-out;
    }
 
     /* -----------------------
@@ -123,6 +129,7 @@ body{
 .items{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 40px;
     justify-items: center;
     justify-content: space-around;
 
@@ -163,3 +170,54 @@ body{
     text-decoration: none;
     
 }
+/* ---------------------
+   INFLUENCER DISCOVERY 
+   ---------------------*/
+   .influemcer-discovery{
+       display: grid;
+       grid-template-columns: repeat(2, 1fr);
+       justify-content: space-between;
+       justify-items: center;
+       align-items: center;
+   }
+   .influemcer-discovery-conten h2{
+        font-size: 38px;
+        font-weight: 700;
+        color:#0A0826;
+        margin: 0;
+    }
+    .influemcer-discovery-conten h4{
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: 3px;
+        color: #E02C6D;
+    }
+
+/* ---------------
+       fotter css 
+   ---------------*/
+   footer{
+        text-align: center;
+        background-color: #0A0826;
+        padding: 50px 0;
+   }
+   footer h3{
+        margin: 0;
+        font-size: 24px;
+        font-weight: 700;
+        color: #fff;
+   }
+   footer p{
+        margin: 4px;
+        font-size: 14px;
+        font-weight: 500;
+        color: #D9DBE1;
+   }
+   
+   .social-icon i{
+        font-size: 18px;
+        color: #fff;
+        padding: 10px;
+        background-color: #120e42c2;
+        border-radius: 30px;
+   }

@@ -239,6 +239,10 @@ body{
             border: none;
             margin: 0;
          }
+         p{
+            font-size: 14px;
+            width: 90%;
+         }
          .top-banner:hover .banner-img img{
             transform: rotate(0);
         }
@@ -260,7 +264,7 @@ body{
             padding-bottom: 20px;
         }
         .banner-img{
-          background-size: 80%;
+          background-size: 60%;
         }
         .banner-content h1{
             font-size: 40px;

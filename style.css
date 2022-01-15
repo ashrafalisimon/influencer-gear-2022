@@ -43,9 +43,7 @@ body{
 /* ---------------------
    logo and nav section css 
    --------------------------*/
-   .top-banner:hover .banner-img img{
-       transform: rotate(360deg);
-   }
+
    .logo_nav{
        display: grid;
        grid-template-columns: repeat(2, 1fr);
@@ -79,13 +77,12 @@ body{
        color: #000000;
        margin-left: 15px;
    }
-   .banner-img img{
-       transition: transform 1s ease-in-out;
-   }
-
     /* -----------------------
        Top Banner Section Css 
        ----------------------- */
+       .top-banner:hover .banner-img img{
+        transform: rotate(360deg);
+    }
        .top-banner{
            display: grid;
            grid-template-columns: repeat(2, 1fr);
@@ -106,6 +103,9 @@ body{
            background-repeat: no-repeat;
            background-position: center;
        }
+       .banner-img img{
+        transition: transform 1s ease-in-out;
+    }
        /* Popular market place css */
        .popular-marketplace-img{
            display: grid;
@@ -115,6 +115,7 @@ body{
             align-items: center;
             justify-items: center;
        }
+      
 /* popular collection css */
 .popular-collection{
     padding-top: 70px;
@@ -221,3 +222,131 @@ body{
         background-color: #120e42c2;
         border-radius: 30px;
    }
+
+
+   /* ----------------
+       Media Quires  
+      --------------*/
+      /* Mobile Divies */
+      @media only screen and (max-width: 688px) {
+        .section-width{
+            padding: 0px;
+        }
+        .section-width-lg{
+            padding:  0;
+        }
+        hr{
+            border: none;
+            margin: 0;
+         }
+         .top-banner:hover .banner-img img{
+            transform: rotate(0);
+        }
+        .logo_nav{
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .logo .logo-text{
+            font-size: 17px; 
+        }
+        nav{
+            display: none;
+        }
+        .icon i:first-child{
+            display: none;
+        }
+        .top-banner{
+            grid-template-columns: repeat(1, 1fr);
+            grid-row-gap: 30px;
+            padding-bottom: 20px;
+        }
+        .banner-img{
+          background-size: 80%;
+        }
+        .banner-content h1{
+            font-size: 40px;
+        }
+        .popular-marketplace-img{
+            display: none;
+        }
+        .items{
+            grid-template-columns: repeat(1, 1fr);
+            grid-row-gap: 40px;
+            
+        
+        }
+        .influemcer-discovery{
+            grid-template-columns: repeat(1, 1fr);
+            grid-row-gap: 30px;
+        }
+        .influemcer-discovery-conten h2{
+             font-size: 30px;
+         }
+         .influemcer-discovery-conten h4{
+             font-size: 17px;
+         }
+         .influemcer-discovery-img img{
+             width: 90%;
+         }
+          
+      }
+
+      /* Tablate Divies */
+      @media only screen and
+      (min-width:689px) and (max-width: 992px) {
+        .section-width{
+            padding: 0px;
+        }
+        .section-width-lg{
+            padding:  0;
+        }
+        hr{
+            border: none;
+            margin: 0;
+         }
+         .top-banner:hover .banner-img img{
+            transform: rotate(0);
+        }
+        .logo_nav{
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .logo .logo-text{
+            font-size: 17px;
+            text-align: center; 
+        }
+        .nav_icon{
+            justify-content: center;
+        }
+        .top-banner{
+            grid-template-columns: repeat(1, 1fr);
+            grid-row-gap: 30px;
+            padding-bottom: 20px;
+        }
+        .banner-img{
+          background-size: 80%;
+        }
+        .banner-content h1{
+            font-size: 40px;
+        }
+        .popular-marketplace-img{
+           grid-template-columns: repeat(4, 1fr);
+           grid-row-gap: 30px;
+        }
+        .items{
+            grid-template-columns: repeat(2, 1fr);
+            grid-row-gap: 40px;
+        }
+        .influemcer-discovery{
+            grid-template-columns: repeat(1, 1fr);
+            grid-row-gap: 30px;
+        }
+        .influemcer-discovery-conten h2{
+             font-size: 30px;
+         }
+         .influemcer-discovery-conten h4{
+             font-size: 17px;
+         }
+         .influemcer-discovery-img img{
+             width: 90%;
+         }
+          
+      }
